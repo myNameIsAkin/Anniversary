@@ -129,3 +129,26 @@ timelineItems.forEach(item => {
 
 window.addEventListener('scroll', checkScroll);
 window.addEventListener('load', checkScroll);
+
+const videoItems = document.querySelectorAll('.video-item');
+const mainVideo = document.getElementById('main-video');
+
+videoItems.forEach(item => {
+    item.addEventListener('click', () => {
+        // Remove active class from all items
+        videoItems.forEach(videoItem => {
+            videoItem.classList.remove('active');
+        });
+        
+        // Add active class to clicked item
+        item.classList.add('active');
+        
+        // Update video source
+        const videoSrc = item.getAttribute('data-src');
+        mainVideo.src = videoSrc;
+        
+        // Load and play the video
+        mainVideo.load();
+        mainVideo.play();
+    });
+});
