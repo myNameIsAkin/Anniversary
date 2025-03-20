@@ -8,7 +8,7 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #f1e5e5;
+    color: #080808;
     background-color: #fff;
 }
 
@@ -308,6 +308,7 @@ section {
     object-fit: cover; /* This is the key property to make images fit properly */
     border-radius: 50%; /* Optional: makes the image circular */
 }
+
 /* Message Section */
 .message {
     background-color: #e63946;
