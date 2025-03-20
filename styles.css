@@ -409,6 +409,7 @@ footer {
     }
 }
 
+/* Video Section */
 .videos {
     background-color: #fff;
 }
@@ -514,6 +515,11 @@ footer {
     .video-container {
         flex-direction: column;
     }
+    
+    .video-playlist {
+        max-height: 300px;
+    }
+}
     
     .video-playlist {
         max-height: 300px;
