@@ -120,6 +120,8 @@ function checkScroll() {
 }
 
 
+
+
 timelineItems.forEach(item => {
     item.style.opacity = '0';
     item.style.transform = 'translateY(20px)';
@@ -130,6 +132,8 @@ timelineItems.forEach(item => {
 window.addEventListener('scroll', checkScroll);
 window.addEventListener('load', checkScroll);
 
+
+// Video playlist functionality
 const videoItems = document.querySelectorAll('.video-item');
 const mainVideo = document.getElementById('main-video');
 
